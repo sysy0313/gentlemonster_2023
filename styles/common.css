@@ -1,0 +1,35 @@
+header {
+    background:pink;
+    width:calc(100% - 60px); margin:0 auto; height:100px;
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+}
+header h1 {
+    background:orange;
+    width:213px
+}
+header h1 a {}
+header h1 a img {width:100%; }
+header .right {
+    display:flex; flex-flow:row nowrap; align-items:center; 
+}
+header .right > * {margin-left:25px;}
+header .right .lang {
+    font-size:20px; font-weight:500; letter-spacing:-0.02em;
+}
+header .right #searchFrm {background:#a0a0a0; border-radius:10px;}
+header .right #searchFrm fieldset {
+    padding:2px 12px; width:319px; height:35px;
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+}
+header .right #searchFrm #search {background:none; width:90%; color:#fff; letter-spacing:-0.02em;}
+header .right #searchFrm #search::placeholder {color:#fff; letter-spacing:-0.02em;}
+header .right #searchFrm #searchBtn {background:none; width:25px; height:25px;}
+header .right #searchFrm #searchBtn img {width:100%;}
+header .right #searchFrm~a {width:35px; height:35px;}
+header .right > a img {width:100%;}
+header .right #login {}
+header .right #login img{}
+header .right #cart {}
+header .right #cart img {}
+header .right #menu {}
+header .right #menu img {}

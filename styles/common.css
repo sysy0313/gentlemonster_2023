@@ -91,8 +91,8 @@ header .open_nav nav a:last-child {margin-bottom:0;}
 header .open_nav nav a:hover {
     color:#1D85FF; 
 }
-header .open_nav nav a:hover span {width:100%;}
-header .open_nav nav a span {
-    transition:all 0.3s;
-    width:0; height:4px; display:block; background:#1D85FF; margin-top:20px; 
+header .open_nav nav a:hover::after {width:100%; transition:all 0.3s; transform:scale(1); opacity:1;}
+header .open_nav nav a::after {
+    content:''; transform:scale(0); opacity:0;
+    height:4px; display:block; background:#1D85FF; margin-top:20px; 
 }

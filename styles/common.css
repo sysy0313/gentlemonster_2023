@@ -1,17 +1,26 @@
+/* common.css 모든 웹페이지 공통 css == common */
+/* common.css == header, footer 공통영역 design */
+/* Firefox */
+html {scrollbar-width: 10px;;scrollbar-color: #222 #f1f1f1;}
+/* Opera */
+html::-o-scrollbar {width: 10px;}/*스크롤바 크기*/
+html::-o-scrollbar-thumb {background-color: #222;border-radius: 5px;}/*스크롤 드래그바*/
+html::-o-scrollbar-thumb:hover {background-color: #555;}
+/* Chrome, Safari, Edge 등 웹킷 기반 브라우저 */
+::-webkit-scrollbar {width: 10px;}/*스크롤바 크기*/
+::-webkit-scrollbar-track {box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);}/*스크롤바 배경*/
+::-webkit-scrollbar-thumb {background-color: #222;border-radius: 5px;}/*스크롤 드래그바*/
+::-webkit-scrollbar-thumb:hover {background-color: #555;}
+/* header */
 header {
     background:pink;
     width:calc(100% - 60px); margin:0 auto; height:100px;
     display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
 }
-header h1 {
-    background:orange;
-    width:213px
-}
+header h1 {background:orange; width:213px}
 header h1 a {}
 header h1 a img {width:100%; }
-header .right {
-    display:flex; flex-flow:row nowrap; align-items:center; 
-}
+header .right {display:flex; flex-flow:row nowrap; align-items:center;}
 header .right > * {margin-left:25px;}
 header .right .lang {
     font-size:20px; font-weight:500; letter-spacing:-0.02em;
@@ -31,5 +40,59 @@ header .right #login {}
 header .right #login img{}
 header .right #cart {}
 header .right #cart img {}
-header .right #menu {}
-header .right #menu img {}
+header .right #nav {}
+header .right #nav img {}
+/* nav 클릭 시 오픈하는 open nav */
+header .open_nav {
+    position:fixed; left:0; top:0;
+    width:100%; height:100vh; 
+    background:#f1f1f1;
+    z-index:100;
+    display:flex; flex-flow:column nowrap;  align-items:center;
+    overflow-y:auto;
+    /* 웹브라우저 y축 기준으로 내용이 넘칠 경우 스크롤을 표시하고,
+    넘치지 않는다면 스크롤을 숨긴다. */
+}
+header .open_nav #nav_close {
+    position:absolute; right:90px; top:90px;
+    width:40px;
+}
+header .open_nav #nav_close img {width:100%;}
+/* swiper slide nav-adver */
+header .open_nav #nav_adver {
+    max-width:900px;
+    margin-top:15px; text-align:center; 
+}
+header .open_nav #nav_adver .swiper-wrapper {}
+header .open_nav #nav_adver .swiper-wrapper .swiper-slide {}
+header .open_nav #nav_adver .swiper-wrapper .swiper-slide a {
+    font-size:20px; letter-spacing:-0.02em; 
+}
+header .open_nav #nav_adver .swiper-button-prev {
+    background:url(../images/adver_prev.png) no-repeat; width:24px; height:24px; top:21px;
+}
+header .open_nav #nav_adver .swiper-button-next {
+    background:url(../images/adver_next.png) no-repeat; width:24px; height:24px; top:21px;
+}
+/* 기본 prev, next 숨기기 */
+header .open_nav #nav_adver .swiper-button-prev::after,
+header .open_nav #nav_adver .swiper-button-next::after {display:none;}
+/* open-nav nav */
+header .open_nav nav {
+    margin-top:80px;
+    display:flex; flex-flow:column nowrap; align-items:center;
+}
+header .open_nav nav a {
+    font-size:3.157rem; letter-spacing:-0.02em; font-weight:700; margin-bottom:60px; line-height:24px;
+    transition:all 0.3s;
+    
+}
+header .open_nav nav a:last-child {margin-bottom:0;}
+header .open_nav nav a:hover {
+    color:#1D85FF; 
+}
+header .open_nav nav a:hover span {width:100%;}
+header .open_nav nav a span {
+    transition:all 0.3s;
+    width:0; height:4px; display:block; background:#1D85FF; margin-top:20px; 
+}

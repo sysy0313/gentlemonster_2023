@@ -55,7 +55,7 @@ header .open_nav {
 }
 header .open_nav #nav_close {
     position:absolute; right:90px; top:90px;
-    width:40px;
+    width:40px; z-index:999;
 }
 header .open_nav #nav_close img {width:100%;}
 /* swiper slide nav-adver */
@@ -79,7 +79,7 @@ header .open_nav #nav_adver .swiper-button-prev::after,
 header .open_nav #nav_adver .swiper-button-next::after {display:none;}
 /* open-nav nav */
 header .open_nav nav {
-    margin-top:80px;
+    margin-top:110px;
     display:flex; flex-flow:column nowrap; align-items:center;
 }
 header .open_nav nav a {
@@ -89,10 +89,10 @@ header .open_nav nav a {
 }
 header .open_nav nav a:last-child {margin-bottom:0;}
 header .open_nav nav a:hover {
-    color:#1D85FF; 
+    color:#1D85FF; filter:drop-shadow(0 0 2px rgb(186, 218, 255, 1) )
 }
 header .open_nav nav a:hover::after {width:100%; transition:all 0.3s; transform:scale(1); opacity:1;}
 header .open_nav nav a::after {
     content:''; transform:scale(0); opacity:0;
-    height:4px; display:block; background:#1D85FF; margin-top:20px; 
+    height:3px; display:block; background:#1D85FF; margin-top:20px; filter:drop-shadow(0 0 2px rgba(186, 218, 255, 1) )
 }

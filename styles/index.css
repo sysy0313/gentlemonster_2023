@@ -1,0 +1,72 @@
+/* main */
+main {}
+/* main - 1. visual */
+main .visual {
+    height:100vh;
+    position:relative; overflow:hidden;
+}
+main .visual .txt {
+    /* background:rgba(255,255,0,0.2); */
+    position:absolute; top:40%;
+    text-align:center;  width:100%;
+    z-index:10;
+}
+main .visual .txt > * {margin-bottom:20px;}
+main .visual .txt > *:last-child {margin-bottom:0;}
+main .visual .txt p {
+    font-size:2.369rem; letter-spacing:-0.02em; color:#fff; 
+}
+main .visual .txt h1 {
+    font-size:3.157rem; letter-spacing:-0.02em; font-weight:700; 
+}
+main .visual .txt .link {}
+main .visual .txt .link  a {
+    display:inline-block; 
+    width:260px; height:55px; background:rgba(255,255,255,0.3); border-radius:15px;
+    font-size:1.777rem; letter-spacing:-0.02em; line-height:55px;
+    transition:all 0.5s;
+}
+main .visual .txt .link  a:hover {
+    background:rgba(29, 133, 255, 0.70); color:#fff;
+}
+main .visual .txt .link  a:nth-of-type(1) {margin-right:10px;}
+main .visual video {
+    width:100%;
+    /* 화면크기 조정 시 비디오 중심축 맞추기 */
+    /* 필수조건 ★ 비디오의 부모가 vh or px 높이 설정 준비!!!! */
+    position:absolute; left:50%;
+    transform:translateX(-50%);
+    /* 방법3 절대크기값 */
+    
+}
+/* 와이드비율의 video화면 전체 배치 시 여백 해결법 */
+/* 1. 반응형웹 @media 특정 해상도마다 비디오 크기 설정값 변경  */
+/* 2. 가장 큰 데스크탑 기준으로 100% 보다 크게 설정하고 넘치게 하는 방법 */
+/* 3. 상대크기가 아닌 절대크기값(px) 크기 설정해서 화면 해상도에 영향을 받지 않는 방법 */
+
+/* main2 bnr */
+main .adver_bnr {
+    
+    background:url(../images/bnr.jpg) no-repeat; background-size:cover; height:300px;
+    padding:0 30px;
+    display:flex; flex-flow:column nowrap; align-items:flex-end; justify-content:center;
+}
+main .adver_bnr .txt {text-align:right;}
+main .adver_bnr .txt > * {margin-bottom:15px}
+main .adver_bnr .txt > *:last-child {margin-bottom:0}
+main .adver_bnr .txt p {
+    font-size:1.777rem; letter-spacing:-0.02em; 
+}
+main .adver_bnr .txt h2 {
+    font-size:3.157rem; letter-spacing:-0.02em; font-weight:700; 
+}
+main .adver_bnr .txt .link {}
+main .adver_bnr .txt .link a {
+    display:inline-block; width:170px; height:40px; background:rgba(255,255,255,0.5); border-radius:10px;
+    text-align:center; line-height:40px; font-size:1.333rem; letter-spacing:-0.02em; 
+    transition:all 0.5s;
+}
+main .adver_bnr .txt .link a:nth-of-type(1) {margin-right:5px;}
+main .adver_bnr .txt .link a:hover {
+    background:#1D85FF; color:#fff;
+}

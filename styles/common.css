@@ -13,11 +13,12 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
 ::-webkit-scrollbar-thumb:hover {background-color: #555;}
 /* header */
 header {
-    background:pink;
     width:calc(100% - 60px); margin:0 auto; height:100px;
     display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+    /* position:fixed; z-index:100; 
+    width:100%; padding:0 30px; */
 }
-header h1 {background:orange; width:213px}
+header h1 {width:213px}
 header h1 a {}
 header h1 a img {width:100%; }
 header .right {display:flex; flex-flow:row nowrap; align-items:center;}
@@ -85,14 +86,17 @@ header .open_nav nav {
 header .open_nav nav a {
     font-size:3.157rem; letter-spacing:-0.02em; font-weight:700; margin-bottom:60px; line-height:24px;
     transition:all 0.3s;
+    text-align:center;
     
 }
 header .open_nav nav a:last-child {margin-bottom:0;}
 header .open_nav nav a:hover {
-    color:#1D85FF; filter:drop-shadow(0 0 2px rgb(186, 218, 255, 1) )
+    color:#1D85FF; 
 }
-header .open_nav nav a:hover::after {width:100%; transition:all 0.3s; transform:scale(1); opacity:1;}
+header .open_nav nav a:hover::after {transition:all 0.3s; transform:scale(1); opacity:1;}
 header .open_nav nav a::after {
     content:''; transform:scale(0); opacity:0;
-    height:3px; display:block; background:#1D85FF; margin-top:20px; filter:drop-shadow(0 0 2px rgba(186, 218, 255, 1) )
+    height:3px; display:block; background:#1D85FF; margin-top:20px;
+    width:850px;
 }
+

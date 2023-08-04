@@ -1,0 +1,11 @@
+/* 반응형 웹 css */
+@media screen and (max-width:1500px){
+    /* 1500px 이하일 때 */
+    main .visual video {
+        width:auto;
+        height:100%;
+        
+        /* 방법3 절대크기값 */
+        /* width:1920px;  */
+    }
+}/* end 1500 */

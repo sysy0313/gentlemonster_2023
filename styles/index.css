@@ -17,7 +17,7 @@ main .visual .txt p {
     font-size:2.369rem; letter-spacing:-0.02em; color:#fff; 
 }
 main .visual .txt h1 {
-    font-size:3.157rem; letter-spacing:-0.02em; font-weight:700; 
+    font-size:3.157rem; letter-spacing:-0.02em; font-weight:700;
 }
 main .visual .txt .link {}
 main .visual .txt .link  a {
@@ -46,15 +46,16 @@ main .visual video {
 
 /* main2 bnr */
 main .adver_bnr {
-    
     background:url(../images/bnr.jpg) no-repeat; background-size:cover; height:300px;
-    padding:0 30px;
-    display:flex; flex-flow:column nowrap; align-items:flex-end; justify-content:center;
 }
-main .adver_bnr .txt {text-align:right;}
+main .adver_bnr .txt {
+    text-align:right; max-width:1200px; margin:0 auto;
+    padding-top:81px;
+}
 main .adver_bnr .txt > * {margin-bottom:15px}
 main .adver_bnr .txt > *:last-child {margin-bottom:0}
 main .adver_bnr .txt p {
+    
     font-size:1.777rem; letter-spacing:-0.02em; 
 }
 main .adver_bnr .txt h2 {
@@ -69,4 +70,52 @@ main .adver_bnr .txt .link a {
 main .adver_bnr .txt .link a:nth-of-type(1) {margin-right:5px;}
 main .adver_bnr .txt .link a:hover {
     background:#1D85FF; color:#fff;
+}
+/* main3 service */
+/* 공통 */
+main .txt h1 {
+    font-size:3.157rem; font-weight:700; letter-spacing:-0.02em;
+    margin-bottom:20px;
+}
+main .txt p {
+    font-size:20px; letter-spacing:-0.02em;
+    line-height:40px; margin-bottom:20px;
+}
+main .txt .service_link {
+    display:block; width:170px; height:40px; 
+    background:#000; color:#fff; font-size:1.3333rem; letter-spacing:-0.02em; line-height:40px;
+    text-align:center; border-radius:15px;
+    transition:all 0.5s;
+}
+main #shop_service .txt .service_link {width:200px;}
+main .txt .service_link:hover {
+    background:#1D85FF; color:#fff;
+}
+/* 온라인서비스 */
+main #online_service {
+    background:url(../images/service_bg1.jpg) no-repeat;
+    background-position:right center;
+    background-size:80%;
+    padding-top:80px;
+    margin:100px 0;
+}
+main #online_service .txt {
+    background:#fff;
+    width:870px; 
+    padding:54px 0 76px 150px;
+}
+/* 매장내서비스 */
+main #shop_service {
+    background:url(../images/service_bg2.jpg) no-repeat;
+    background-size:80%;
+    background-position:left 20%;
+    display:flex; flex-flow:row-reverse;
+    padding-top:80px;
+}
+main #shop_service .txt {
+    background:#fff;
+    width:870px; 
+    padding:54px 150px 76px 150px;
+    text-align:right;
+    display:flex; flex-flow:column nowrap; align-items:flex-end;
 }

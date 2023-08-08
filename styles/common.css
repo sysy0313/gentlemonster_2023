@@ -99,4 +99,25 @@ header .open_nav nav a::after {
     height:3px; display:block; background:#1D85FF; margin-top:20px;
     width:850px;
 }
-
+/* footer */
+footer {
+    background:#f1f1f1;
+    padding:60px 0;
+}
+footer .f_menu {display:flex; flex-flow:row nowrap; width:calc(100% - 60px); margin:0 auto; margin-bottom:50px; }
+footer .f_menu > * {margin-right:70px;}
+footer .f_menu .service {}
+footer .f_menu .law {}
+footer .f_menu .sns {}
+footer .f_menu dl dt {
+    font-weight:500; font-size:1.333rem; margin-bottom:25px; letter-spacing:-0.02em;
+}
+footer .f_menu dl dd {line-height:30px; letter-spacing:-0.02em;}
+footer .f_menu dl dd a {}
+footer .f_menu dl dd a:hover {font-weight:700;}
+footer .f_copy {display:flex; flex-flow:row nowrap; width:calc(100% - 60px); margin:0 auto;}
+footer .f_copy .logo {width:200px; margin-right:30px;}
+footer .f_copy .logo img {width:100%;}
+footer .f_copy address {line-height:30px; letter-spacing:-0.02em; margin:-10px 0 0 0;}
+footer .f_copy address a {letter-spacing:-0.02em; text-decoration:underline;}
+footer .f_copy address a:hover {font-weight:700;}

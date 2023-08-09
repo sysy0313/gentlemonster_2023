@@ -111,6 +111,7 @@ main #shop_service {
     background-position:left 20%;
     display:flex; flex-flow:row-reverse;
     padding-top:80px;
+    margin-bottom:80px;
 }
 main #shop_service .txt {
     background:#fff;

@@ -1,0 +1,136 @@
+main { 
+    max-width:100%;
+    text-align:center; margin:0 auto;
+    background:#f1f1f1;
+    padding:120px 0px;
+}
+main.mainOpen {height:100vh;}
+main .user_login {
+    width:300px; margin:0 auto;
+    padding-bottom:35px; margin-bottom:25px;
+    border-bottom:1px solid #222;
+
+}
+main .user_login h2 {
+    font-size:3.157rem; font-weight:700; letter-spacing:-0.02em; 
+    margin-bottom:35px;
+}
+/* 로그인 Frm */
+main .user_login #loginFrm {
+    margin-bottom:20px;
+}
+main .user_login #loginFrm fieldset {}
+main .user_login #loginFrm .input {
+    display:flex; flex-flow:column nowrap; margin:0 auto;
+    width:300px; 
+    border:1px solid #333333; border-radius:5px;
+    overflow:hidden;
+    background:#fff;
+    margin-bottom:25px;
+}
+main .user_login #loginFrm fieldset #user_id {
+    height:50px;
+    border-bottom:1px solid #333333;
+    height:50px; padding:0 10px;
+}
+main .user_login #loginFrm fieldset #user_id::placeholder {
+    letter-spacing:-0.02em;
+}
+main .user_login #loginFrm fieldset #user_pw {
+    height:50px; padding:0 10px;
+}
+main .user_login #loginFrm fieldset #user_pw::placeholder {
+    letter-spacing:-0.02em;
+}
+main .user_login #loginFrm fieldset #login_btn {
+    background:#222; color:#fff; font-size:1.3rem; font-weight:500;
+    width:300px; height:50px; border-radius:5px;
+    transition:background 0.3s;
+}
+/* js error */
+main .user_login #loginFrm fieldset .error {
+    color:#ff0000; margin:-15px 0 10px;
+    text-align:left;
+}
+/* hover */
+main .user_login #loginFrm fieldset #login_btn:hover {
+    background:#1D85FF;
+}
+/* join */
+main .user_login .join {
+    margin-bottom:35px;
+}
+main .user_login .join a {
+    padding:20px; font-size:1.3rem;
+}
+/* hover */
+main .user_login .join a:hover {font-weight:500;}
+/* sns */
+main .user_login .sns {}
+main .user_login .sns h3 {
+    letter-spacing:-0.02em; margin-bottom:35px;
+}
+main .user_login .sns ul {
+    display:flex; flex-flow:row nowrap; justify-content:center;
+}
+main .user_login .sns ul li {
+    width:50px; margin-right:12.5px;
+}
+main .user_login .sns ul li:last-child {margin-right:0;}
+main .user_login .sns ul li a {}
+main .user_login .sns ul li a img {width:100%;}
+/* hover */
+main .user_login .sns ul li:hover a img {opacity:0.8}
+/* 비회원주문조회 */
+main .guest {width:300px; margin: 0 auto;}
+main .guest > a {
+    display:block; line-height:50px;
+    width:300px; height:50px; background:#222; color:#fff; 
+    border-radius:5px; font-size:1.3rem;
+    transition:background 0.3s;
+}
+/* hover */
+main .guest > a:hover {background:#1D85FF; }
+main .guest #guestFrm {
+    margin-top:10px; overflow:hidden; transition:height 0.3s}
+/* js class */
+.openClose {height:190px !important;}
+main .guest > a.openGuest {
+    background:none; color:#000; font-weight:500;
+}
+main .guest > a.openGuest:hover {color:#1D85FF}
+main .guest #guestFrm fieldset {}
+main .guest #guestFrm fieldset .input {
+    display:flex; flex-flow:column nowrap;
+    width:300px; margin:0 auto;
+    background:#fff;
+    border:1px solid #222; border-radius:5px; overflow:hidden;
+    margin-bottom:25px; 
+}
+main .guest #guestFrm fieldset .input #guest_num {
+    border-bottom:1px solid #222; height:50px; padding:10px;
+}
+main .guest #guestFrm fieldset .input #guest_num::placeholder {
+    letter-spacing:-0.02em;
+}
+main .guest #guestFrm fieldset .input #guest_mail {
+    height:50px; padding:10px;
+}
+main .guest #guestFrm fieldset .input #guest_mail::placeholder {
+    letter-spacing:-0.02em;
+}
+main .guest #guestFrm fieldset #guest_btn {
+    width:300px; height:50px; background:#222; color:#fff; 
+    border-radius:5px; font-size:1.3rem;
+    transition:background 0.3s;
+}
+/* hover */
+main .guest #guestFrm fieldset #guest_btn:hover {
+    background:#1D85FF; 
+}
+/* js error */
+main .guest #guestFrm fieldset .error {
+    color:#ff0000; margin:-15px 0 10px;
+    text-align:left;
+}
+footer {background:#fff;}

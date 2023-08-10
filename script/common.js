@@ -1,3 +1,4 @@
+// <!-- header, footer 웹페이지 공통영역 적용 JS -->
 //header, footer JS
 //header 전체메뉴 스크립트 flow
 // 1. oepn-nav 초기숨기기

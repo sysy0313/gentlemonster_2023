@@ -17,8 +17,50 @@
 </head>
 <body>
     <!-- header.php -->
+    <!-- <?php include ('./header.php') ?> -->
     <main>
         <!-- 1. swipe-slide -->
+        <div class="swiper" id="product_slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1">
+                    <div class="txt">
+                        <h1><em>캐쥬얼&amp;댄디한</em><br>분위기 연출</h1>
+                        <p>GENTLE MONSTER</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slide2">
+                    <div class="txt">
+                        <h1><em>캐쥬얼&amp;댄디한</em><br>분위기 연출</h1>
+                        <p>GENTLE MONSTER</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slide3">
+                    <div class="txt">
+                        <h1><em>캐쥬얼&amp;댄디한</em><br>분위기 연출</h1>
+                        <p>GENTLE MONSTER</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slide4">
+                    <div class="txt">
+                        <h1><em>캐쥬얼&amp;댄디한</em><br>분위기 연출</h1>
+                        <p>GENTLE MONSTER</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slide5">
+                    <div class="txt">
+                        <h1><em>캐쥬얼&amp;댄디한</em><br>분위기 연출</h1>
+                        <p>GENTLE MONSTER</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slide6">
+                    <div class="txt">
+                        <h1><em>캐쥬얼&amp;댄디한</em><br>분위기 연출</h1>
+                        <p>GENTLE MONSTER</p>
+                    </div>
+                </div>
+            </div><!-- swiper-wrapper end -->
+            <div class="swiper-scrollbar"></div>
+        </div><!-- swiper end -->
         <!-- 2. category -->
         <div id="category">
             <a href="#">
@@ -75,8 +117,8 @@
                 <div class="item item1">
                     <a href="#" class="link">
                         <div class="box">
-                            <p class="item_img"><img src="./images/glasses_img/g_model_01.jpg" alt=""></p>
-                            <p class="item_hover"><img src="./images/glasses_img/glasses_01.jpg" alt=""></p>
+                            <p class="item_img"><img src="./images/glasses_img/glasses_01.jpg" alt=""></p>
+                            <p class="item_hover"><img src="./images/glasses_img/g_model_01.jpg" alt=""></p>
                         </div>
                         <div class="item_info">
                             <h2>Blue Light Protection</h2>
@@ -95,8 +137,8 @@
                 <div class="item item2">
                     <a href="#" class="link">
                         <div class="box">
-                            <p class="item_img"><img src="./images/glasses_img/g_model_02.jpg" alt=""></p>
-                            <p class="item_hover"><img src="./images/glasses_img/glasses_02.jpg" alt=""></p>
+                            <p class="item_img"><img src="./images/glasses_img/glasses_02.jpg" alt=""></p>
+                            <p class="item_hover"><img src="./images/glasses_img/g_model_02.jpg" alt=""></p>
                         </div>
                         <div class="item_info">
                             <h2>Blue Light Protection</h2>
@@ -115,8 +157,8 @@
                 <div class="item item3">
                     <a href="#" class="link">
                         <div class="box">
-                            <p class="item_img"><img src="./images/glasses_img/g_model_03.jpg" alt=""></p>
-                            <p class="item_hover"><img src="./images/glasses_img/glasses_03.jpg" alt=""></p>
+                            <p class="item_img"><img src="./images/glasses_img/glasses_03.jpg" alt=""></p>
+                            <p class="item_hover"><img src="./images/glasses_img/g_model_03.jpg" alt=""></p>
                         </div>
                         <div class="item_info">
                             <h2>Blue Light Protection</h2>
@@ -135,8 +177,8 @@
                 <div class="item item4">
                     <a href="#" class="link">
                         <div class="box">
-                            <p class="item_img"><img src="./images/glasses_img/g_model_04.jpg" alt=""></p>
-                            <p class="item_hover"><img src="./images/glasses_img/glasses_04.jpg" alt=""></p>
+                            <p class="item_img"><img src="./images/glasses_img/glasses_04.jpg" alt=""></p>
+                            <p class="item_hover"><img src="./images/glasses_img/g_model_04.jpg" alt=""></p>
                         </div>
                         <div class="item_info">
                             <h2>Blue Light Protection</h2>
@@ -155,8 +197,8 @@
                 <div class="item item5">
                     <a href="#" class="link">
                         <div class="box">
-                            <p class="item_img"><img src="./images/glasses_img/g_model_05.jpg" alt=""></p>
-                            <p class="item_hover"><img src="./images/glasses_img/glasses_05.jpg" alt=""></p>
+                            <p class="item_img"><img src="./images/glasses_img/glasses_05.jpg" alt=""></p>
+                            <p class="item_hover"><img src="./images/glasses_img/g_model_05.jpg" alt=""></p>
                         </div>
                         <div class="item_info">
                             <h2>Blue Light Protection</h2>
@@ -182,9 +224,47 @@
 -->
             </div>
         </div>
-
+        
+        
     </main>
     <!-- footer.php -->
+    <!-- <?php include ('./footer.php') ?> -->
+    <!-- <script src="./script/common.js"></script> -->
     <script src="./script/product.js"></script>
+    <!-- 특정 페이지에만 해당하는 js 동작 기능은 내부 스크립트로 작성해도 된다. -->
+    <!-- product_slide 기능은 product_list.html 에만 존재한다 (내부) -->
+    <!-- header swiper 기능은 heaer 가 모든 페이지에 존재하기 때문에 외부에 작성 -->
+    <script>
+        const product_slide = new Swiper('#product_slide', {
+            slidesPerView:1,//한번에 보이는 슬라이드 개수
+            centeredSlides:true, //슬라이드 기준이 중심부터 시작 설정
+            loop:true,//무한반복설정
+            autoplay:{delay:2000},//자동재생
+            speed:800,//슬라이드 전환 시 부드러운 전환
+            scrollbar:{el:'#product_slide .swiper-scrollbar'},
+            on:{
+                init:function(){
+                    //슬라이드가 변경되기 전 초기 실행함수
+                    this.slides[this.activeIndex].querySelector('.txt').style.opacity = '1';
+                },
+                slideChange:function(){
+                    //슬라이드 변경될 때 인식되는 실행함수
+                    //1. 활성화 전 모든 슬라이드 opacity:0; 만들기
+                    this.slides.forEach(target => {
+                        target.querySelector('.txt').style.opacity = '0'
+                        target.querySelector('.txt').style.transform = 'translateX(80px)'
+                    })
+                    //2. 활성화 슬라이드만 opacity:1
+                    this.slides[this.activeIndex].querySelector('.txt').style.opacity = '1';
+                    this.slides[this.activeIndex].querySelector('.txt').style.transform = 'translateX(0)'
+                }
+            },
+            breakpoints:{
+                900:{slidesPerView:2, centeredSlides:false},
+                1400:{slidesPerView:3, centeredSlides:true},
+            },
+        })
+        
+    </script>
 </body>
 </html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리뷰게시판  | GENTLE MONSTER</title>
+    <!-- swiper slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- 외부스타일시트 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <style>
+        main {text-align:center;}
+        iframe {
+            width:90%; height:500px;
+            margin-top:100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <?php include ('./header.php') ?>
+    <main>
+        <!-- 외부 웹 주소(게시판, 지도)를 내부 HTML 로 삽입하는 방법 -->
+        <iframe src="http://sysy0313.pe.kr/gnuboard5/bbs/board.php?bo_table=gentle_review" frameborder="0" scrolling="no"></iframe>
+    </main>
+    <!-- footer -->
+    <?php include ('./footer.php') ?>
+    <script src="./script/common.js"></script>
+</body>
+</html>

@@ -1,7 +1,45 @@
 main {}
-/* 카테고리 */
+/* 2. swiper-slide */
+main #product_slide {}
+main #product_slide .swiper-wrapper {}
+main #product_slide .swiper-wrapper .swiper-slide {
+    /* 공통 slide1~6 */
+    width:700px; height:740px;
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt {
+    margin:490px 0 0 55px;
+    /* 초기 숨기기 (이후 swiper 활용 서서히 나타나고 사라지기 기능 추가 */
+    transition:all 2s;
+    opacity:0; transform:translateX(80px);
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt h1 {
+    font-size:3.157rem; letter-spacing:-0.02em; line-height:65px; margin-bottom:10px;
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt h1 em {
+    font-size:3.157rem; letter-spacing:-0.02em; font-weight:700;
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt p {
+    font-size:1.777rem; letter-spacing:-0.02em; font-weight:700;
+}
+main #product_slide .swiper-wrapper .slide1 {background-image:url(../images/model/model_03.jpg)}
+main #product_slide .swiper-wrapper .slide2 {background-image:url(../images/model/model_04.jpg)}
+main #product_slide .swiper-wrapper .slide3 {background-image:url(../images/model/model_06.jpg)}
+main #product_slide .swiper-wrapper .slide4 {background-image:url(../images/model/model_09.jpg)}
+main #product_slide .swiper-wrapper .slide5 {background-image:url(../images/model/model_12.jpg)}
+main #product_slide .swiper-wrapper .slide6 {background-image:url(../images/model/model_17.jpg)}
+/* swiper_scrollbar design */
+main #product_slide .swiper-scrollbar {
+    /* position:absolute 기본 설정 */
+    left:calc(50% - 500px / 2);
+    bottom:25px;
+    background:rgba(255,255,255,0.8); width:500px; height:5px;
+    border-radius:0;
+} /* 스크롤 배경 (크기, 위치) */
+main #product_slide .swiper-scrollbar-drag {
+    background:#1D85FF; border-radius:0;
+} /* 스크롤 막대 (크기x) */
+/* 2. 카테고리 */
 main #category {
-    background:pink;
     max-width:1350px; margin:0 auto;
     display:flex; flex-flow:row wrap; justify-content:space-around;
     padding:100px 0;
@@ -18,8 +56,8 @@ main #category a span {
 }
 /* 상품목록 */
 main #product_list {
-    background:lemonchiffon;
     width:calc(100% - 80px); margin:0 auto;
+    padding-bottom:100px;
 }
 /* 목록제목 */
 main #product_list .title {margin-bottom:50px;}

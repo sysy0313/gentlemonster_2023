@@ -1,0 +1,12 @@
+main {text-align:center; padding:50px;}
+main #map {
+    background:lightblue;
+    width:700px;
+    margin:50px auto; height:500px;
+}
+main h1 {
+    font-size:1.5rem; font-weight:700; letter-spacing:-0.02em; 
+}
+main p {
+    line-height:30px; letter-spacing:-0.02em;
+}

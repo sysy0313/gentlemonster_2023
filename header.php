@@ -32,9 +32,9 @@
             <a href="./product_list.html">선글라스</a>
             <a href="./product_list.html">안경</a>
             <a href="./product_list.html">콜라보레이션</a>
-            <a href="./product_list.html#">스타일</a>
+            <a href="./product_list.html">스타일</a>
             <a href="./product_list.html">브랜드이슈</a>
-            <a href="#">매장보기</a>
+            <a href="./map.html">매장보기</a>
             <a href="./product_list.html">수리서비스</a>
         </nav>
     </div>

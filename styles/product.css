@@ -134,4 +134,4 @@ main #product_list .item .link .item_info .item_color .blue {background:rgb(90, 
 main #product_list .item .link .item_info .item_color .gold {background:rgb(255, 219, 15);}
 main #product_list .item .link .item_info .item_color .black {background:#333;}
 main #product_list .item .link .item_info .item_color .beige {background:rgb(245, 228, 192);}
-main #product_list .item .like {position:absolute; top:15px; right:15px; z-index:999;}
+main #product_list .item .like {position:absolute; top:15px; right:15px; z-index:50;}
